@@ -36,10 +36,6 @@
       33.8px 30px 40.7px -4px hsl(var(--shadow-color) / 0.18);
   }
 
-* {
-    border: 1px solid blue;
-}
-
 .background-shape {
     position: absolute;
     top: 0%;
@@ -52,8 +48,36 @@
     z-index: -1; /* Ensure the image is above the background shape */
   }
   
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   
+  .work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .work > h1 {
+    grid-column: 1 / 4;
+  }
+
+  .project-cover {
+    background-color: gainsboro;
+    height: 200px;
+    align-content: center;
+    text-align: center;
+  }
+
+  .project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-description {
+    grid-column: 1 / 3;
+  }
 
 
 
