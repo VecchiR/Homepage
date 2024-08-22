@@ -36,6 +36,40 @@
       33.8px 30px 40.7px -4px hsl(var(--shadow-color) / 0.18);
   }
 
+* {
+    border: 1px solid blue;
+}
+
+.background-shape {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200%;
+    min-height: 600px;
+    background-color: #22ebb6; /* Background color for the left side */
+    transform-origin: top left;
+    transform: rotate(-20deg); /* Adjust the rotation angle as needed */
+    z-index: -1; /* Ensure the image is above the background shape */
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .gh-logo-link, 
