@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   /* 50.56px */
 }
 
@@ -121,7 +121,7 @@ main {
 }
 
 header {
-  padding: 4em 6em;
+  padding: 4rem 6rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -187,15 +187,15 @@ header i {
 
 .work,
 .contact {
-  padding: 4em 6em;
+  padding: 4rem 6rem;
 }
 
 .work {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 100%;
-  gap: 5em 4em;
-  margin-bottom: 5em;
+  gap: 5rem 4rem;
+  margin-bottom: 5rem;
 }
 
 .work>h1 {
@@ -222,7 +222,7 @@ header i {
 .project-info {
   padding: 20px 24px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
@@ -231,7 +231,7 @@ header i {
 }
 
 .project-info p {
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 .project-icons {
@@ -315,19 +315,6 @@ address {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
   display: flex;
   flex-direction: row;
@@ -336,7 +323,7 @@ footer {
   align-content: center;
   align-items: center;
   column-gap: 10px;
-  height: 4em;
+  height: 4rem;
   width: 100%;
   background-color: var(--accent);
 }
@@ -358,4 +345,56 @@ footer {
 .gh-name-link:hover {
   color: white;
   text-decoration: underline;
+}
+
+
+/* tablet */
+@media (600px < width < 1200px) {
+
+  * {
+    color: red;
+  }
+
+  .work {
+    grid-template: 2rem 1fr 1fr / 1fr 1fr;
+  }
+
+  .work>h1 {
+    grid-column: 1 / 3;
+  }
+
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  * {
+    color: blue;
+  }
+
+  .work {
+    grid-template: 2rem repeat(5, 1fr)/ 1fr;
+  }
+
+  .work>h1 {
+    grid-column: 1 / 2;
+  }
+
+  .contact {
+    flex-direction: column;
+    row-gap: 4rem;
+    padding: 4rem 0 0;
+  }
+
+  .contact h1 {
+    text-align: center;
+  }
+
+  .contact-text {
+    padding: 0 6rem;
+  }
+
+  .contact .social-icons {
+    justify-content: center;
+  }
+
 }
