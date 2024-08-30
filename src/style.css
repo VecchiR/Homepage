@@ -170,7 +170,6 @@ header img {
   margin-bottom: 32px;
   font-size: var(--big-p-text);
   line-height: 38px;
-  text-align: justify;
 }
 
 .social-icons {
@@ -358,13 +357,28 @@ footer {
 /* tablet */
 @media (600px < width < 1200px) {
 
-  * {
+  /* * {
     color: red;
+  } */
+
+  header,
+  .about-container {
+    display: block;
   }
 
   header {
     padding: 2rem 3rem;
   }
+
+  .about-container {
+    padding: 95px 60px;
+    margin: 10rem 1rem 1rem;
+  }
+
+  .main-picture {
+    float: left;
+    margin: 0rem 35px 25px 0rem;
+    }
 
   .work,
   .contact {
@@ -385,13 +399,28 @@ footer {
 
 /* mobile */
 @media (max-width: 600px) {
-  * {
+  /* * {
     color: blue;
+  } */
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+
+  }
+
+  p,
+  address {
+    font-size: 18px;
   }
 
   header {
     flex-direction: column;
-    padding: 30px 45px;
+    padding: 28px;
+  }
+
+  header i {
+    font-size: 36px;
   }
 
   .main-picture {
@@ -404,19 +433,26 @@ footer {
     padding: 28px 0 0 0;
   }
 
-  .about-container h1{
+  .about-container h1 {
     text-align: center;
     margin: 0;
-    font-size: 32px;
+  }
+
+  .about-container p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 16px 0;
+    text-align: left;
   }
 
   .about-container .social-icons {
     justify-content: center;
+    gap: 16px;
   }
 
   .work,
   .contact {
-    padding: 30px 45px;
+    padding: 30px 28px;
   }
 
   .work {
@@ -427,6 +463,20 @@ footer {
 
   .work>h1 {
     grid-column: 1 / 2;
+    text-align: center;
+  }
+
+  .work .project-icons {
+    font-size: 28px;
+    gap: 10px;
+  }
+
+  .project-icons span {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;;
   }
 
   .contact {
@@ -435,16 +485,27 @@ footer {
     padding: 2rem 0 0;
   }
 
-  .contact h1 {
-    text-align: center;
-  }
-
   .contact-text {
     padding: 0 45px;
   }
 
   .contact .social-icons {
     justify-content: center;
+    font-size: 36px;
+  }
+
+  .phone span, 
+  .email span {
+    font-size: 28px;
+  }
+
+  footer {
+    height: 3rem;
+    font-size: 14px;
+  }
+
+  .gh-logo {
+    max-width: 16px;
   }
 
 }
